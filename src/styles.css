@@ -1,0 +1,112 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, black, rgb(59, 59, 131), lightblue);
+}
+
+.title {
+    font-size: 85px;
+    color: rgb(0, 0, 0);
+    animation: flipTitle ease-out infinite 10s;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #413f348e;
+}
+
+@keyframes flipTitle {
+    0% {
+        transform: rotateY(90deg);
+    }
+
+    0.5% {
+        transform: rotateY(45deg);
+    }
+
+    10%,
+    20% {
+        transform: rotateY(25deg);
+    }
+
+    15%,
+    25% {
+        transform: rotateY(30deg);
+    }
+
+    100% {
+        to: rotateY(0deg);
+    }
+}
+
+.containerInput {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 9px;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.containerInput input {
+    background-color: transparent;
+    border: 0;
+    font-size: 24px;
+    color: white;
+    outline: none;
+    margin-right: 8px;
+}
+
+.containerInput input::placeholder {
+    color: white;
+}
+
+.botaoPesquisar {
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.botaoPesquisar:hover {
+    transform: scale(1.2);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 500px;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.main h2 {
+    margin: 16px 0;
+    font-size: 32px;
+}
+
+.main span {
+    margin-bottom: 2px;
+}
+
+@media (max-width: 950px) {
+    .title {
+        font-size: 50px;
+    }
+
+    .main h2 {
+        font-size: 28px;
+    }
+
+    .main {
+        width: 80%;
+        min-height: 250px;
+    }
+
+}
