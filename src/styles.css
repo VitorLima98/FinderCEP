@@ -10,9 +10,10 @@
 .title {
     font-size: 85px;
     color: rgb(0, 0, 0);
-    animation: flipTitle ease-out infinite 10s;
+    animation: flipTitle ease-out 10s;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #413f348e;
+    text-align: center;
 }
 
 @keyframes flipTitle {
