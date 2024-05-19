@@ -21,10 +21,6 @@
         transform: rotateY(90deg);
     }
 
-    0.5% {
-        transform: rotateY(45deg);
-    }
-
     10%,
     20% {
         transform: rotateY(25deg);
@@ -36,7 +32,7 @@
     }
 
     100% {
-        to: rotateY(0deg);
+        to: rotateY(90deg);
     }
 }
 
